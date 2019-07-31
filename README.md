@@ -1,5 +1,5 @@
 # CentOS Docker LAMP
-A CentOS 7 Docker LAMP suitable for local Drupal or WordPress development. This is meant to simulate a development environment compatible with cPanel hosting. This container is ideal for running on Linux, Windows or Mac as everything is in one container.
+A CentOS 7 Docker LAMP suitable for local development. This container is ideal for running on Linux, Windows or Mac as everything is in one container.
 
 # Features
 - Runs as a Docker Container
@@ -11,8 +11,6 @@ A CentOS 7 Docker LAMP suitable for local Drupal or WordPress development. This 
 - SSH
 - phpMyAdmin
 - Git
-- Drush
-- NodeJS
 
 # Example Usage with Data Inside Docker
 
