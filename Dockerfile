@@ -53,17 +53,6 @@ RUN yum install -y phpMyAdmin \
 COPY MariaDB.repo /etc/yum.repos.d/MariaDB.repo
 RUN yum clean all;yum -y install mariadb-server mariadb-client
 
-# Setup Drush
-RUN wget http://files.drush.org/drush.phar \
-&& chmod +x drush.phar \
-&& mv drush.phar /usr/local/bin/drush
-
-# Setup NodeJS
-RUN curl --silent --location https://rpm.nodesource.com/setup_6.x | bash - \
-&& yum -y install nodejs gcc-c++ make \
-&& npm install -g npm \
-&& npm install -g gulp grunt-cli
-
 # UTC Timezone & Networking
 RUN ln -sf /usr/share/zoneinfo/UTC /etc/localtime \
 	&& echo "NETWORKING=yes" > /etc/sysconfig/network
