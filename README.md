@@ -11,8 +11,6 @@ A CentOS 7 Docker LAMP suitable for local Drupal or WordPress development. This 
 - SSH
 - phpMyAdmin
 - Git
-- Drush
-- NodeJS
 
 # Example Usage with Data Inside Docker
 
